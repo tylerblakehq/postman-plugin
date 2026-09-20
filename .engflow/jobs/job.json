@@ -1,0 +1,5 @@
+{
+  "platforms": ["ubuntu2604_x64", "ubuntu2604_arm64"],
+  "pretty_name": "validate",
+  "test_script": ["node", "scripts/ci.js"]
+}

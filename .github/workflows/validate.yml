@@ -19,21 +19,5 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Manifest is in sync with the skill files
-        run: node scripts/build-manifest.js --check
-
-      - name: Manifests are valid JSON
-        run: |
-          for file in .claude-plugin/marketplace.json .claude-plugin/plugin.json .cursor-plugin/plugin.json .kimi-plugin/plugin.json manifest.json; do
-            node -e "JSON.parse(require('fs').readFileSync('$file','utf8'))" && echo "ok $file"
-          done
-
-      - name: Every skill has frontmatter Claude Code can load
-        run: |
-          status=0
-          for skill in skills/*/SKILL.md; do
-            head -1 "$skill" | grep -qx -- '---' || { echo "::error file=$skill::missing YAML frontmatter"; status=1; }
-            grep -qE '^name:' "$skill" || { echo "::error file=$skill::frontmatter has no name"; status=1; }
-            grep -qE '^description:' "$skill" || { echo "::error file=$skill::frontmatter has no description"; status=1; }
-          done
-          exit $status
+      - name: Validate plugin files
+        run: node scripts/ci.js
