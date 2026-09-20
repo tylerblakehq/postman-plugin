@@ -1,6 +1,6 @@
 ---
 name: performance-testing
-description: Load-tests a collection with concurrent virtual users, a chosen load profile, and pass/fail thresholds on latency or error rate — run locally or on Postman's cloud runners. Use when the user asks to "load test this API," "run a performance test," "check how this holds up under load," or "benchmark this collection." Covers `postman performance run`. This generates real traffic against a real target — confirm the target and scale before running, the same way any action with effects outside this session gets confirmed.
+description: Load-tests a collection with concurrent virtual users, a chosen load profile, and pass/fail thresholds on latency or error rate — run locally or on Postman's cloud runners. Use when the user asks to "load test this API," "run a performance test," "check how this holds up under load," or "benchmark this collection." Covers `postman performance run`. Not for page-load or Core Web Vitals (LCP, INP, CLS, Lighthouse, PageSpeed) — that is the `website-performance` skill. This generates real traffic against a real target — confirm the target and scale before running, the same way any action with effects outside this session gets confirmed.
 ---
 
 # Performance Testing
@@ -14,6 +14,9 @@ against thresholds you define, on infrastructure you choose. The collection
 under test is authored the normal way — see the `collection-schema-v3` skill
 if it needs edits before the load test is meaningful (e.g. an assertion
 that would fail every VU's request identically).
+
+Page paint, Lighthouse scores, and layout shift are not this skill — see
+`website-performance` for Core Web Vitals and page-load work.
 
 ## Core knowledge
 
@@ -60,6 +63,8 @@ that would fail every VU's request identically).
    `postman-cloud` run will reach a target, check whether it's IP-allowlisted
    — use `postman-cloud-static-ip` if so, rather than discovering the
    mismatch as a wall of connection failures.
+4. **Do not use this skill for website page-load work.** LCP, INP, CLS,
+   Lighthouse, PageSpeed, images, and fonts belong in `website-performance`.
 
 ## Verification
 

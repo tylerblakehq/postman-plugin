@@ -145,13 +145,13 @@
     {
       "name": "performance-testing",
       "plugin": "postman",
-      "description": "Load-tests a collection with concurrent virtual users, a chosen load profile, and pass/fail thresholds on latency or error rate — run locally or on Postman's cloud runners. Use when the user asks to \"load test this API,\" \"run a performance test,\" \"check how this holds up under load,\" or \"benchmark this collection.\" Covers `postman performance run`. This generates real traffic against a real target — confirm the target and scale before running, the same way any action with effects outside this session gets confirmed.",
+      "description": "Load-tests a collection with concurrent virtual users, a chosen load profile, and pass/fail thresholds on latency or error rate — run locally or on Postman's cloud runners. Use when the user asks to \"load test this API,\" \"run a performance test,\" \"check how this holds up under load,\" or \"benchmark this collection.\" Covers `postman performance run`. Not for page-load or Core Web Vitals (LCP, INP, CLS, Lighthouse, PageSpeed) — that is the `website-performance` skill. This generates real traffic against a real target — confirm the target and scale before running, the same way any action with effects outside this session gets confirmed.",
       "files": [
         {
           "target": "SKILL.md",
           "source": "skills/performance-testing/SKILL.md",
-          "bytes": 4226,
-          "sha256": "41da742e5cf847c86353518a666122e6bbced2d756ade1f09023004fda54215c"
+          "bytes": 4634,
+          "sha256": "eb9814890416c93117becc8e23efa27e764898278d82765cd356fd58671d97f7"
         }
       ]
     },
@@ -219,6 +219,19 @@
           "source": "skills/postman-mcp-server/references/test.md",
           "bytes": 3332,
           "sha256": "ed840f6ea3039cafe0e3f6ac3f26e8b9a91271ec37dba20260cd2feb5e71eb3e"
+        }
+      ]
+    },
+    {
+      "name": "website-performance",
+      "plugin": "postman",
+      "description": "Makes pages load and respond faster by measuring Core Web Vitals first, then cutting image, JavaScript, CSS, font, cache, and server bottlenecks. Use when the user asks to \"optimize website performance,\" \"improve LCP / INP / CLS,\" \"fix PageSpeed / Lighthouse,\" \"speed up this page,\" \"reduce layout shift,\" or \"optimize images and fonts.\" Not for API load testing or `postman performance run` — that is the `performance-testing` skill.",
+      "files": [
+        {
+          "target": "SKILL.md",
+          "source": "skills/website-performance/SKILL.md",
+          "bytes": 7262,
+          "sha256": "0830030fc4c4592689d0a3d8b821d265be64a159386184bf6d8f9e7766336176"
         }
       ]
     }
