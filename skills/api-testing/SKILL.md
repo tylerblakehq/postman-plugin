@@ -19,6 +19,9 @@ Don't reach for the heavier tool when the lighter one already answers the
 question — a one-off endpoint check doesn't need a collection, and a
 collection run doesn't need Playwright.
 
+A failing `pm.test` or a contract mismatch is this skill. LCP, INP, CLS,
+or a Lighthouse / PageSpeed score is `website-performance`.
+
 ## `postman request` — over curl, not instead of testing
 
 A single request with Postman's resolution built in: `-e` resolves
@@ -75,6 +78,8 @@ that shouldn't be recorded.
    the request instead.
 4. **`--use-mock` is the way to test without a live backend** — prefer it
    over standing up ad hoc fakes or skipping tests that need a dependency.
+5. **Page paint is a different skill.** LCP, INP, CLS, Lighthouse, and
+   PageSpeed belong in `website-performance`, not a collection run.
 
 ## Verification
 

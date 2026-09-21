@@ -198,3 +198,13 @@ for TTFB, a bundle analyzer) and which metrics you could not collect.
 Check every route that shares the assets, data, or components you
 touched — a split that helps the landing page can regress a dashboard
 that already loaded those modules.
+
+## Reference
+
+- `performance-testing` skill — concurrent virtual users and
+  `postman performance run`. Page paint is this skill; load under
+  traffic is that one.
+- `api-testing` skill — a failing `pm.test` or a contract mismatch on
+  the endpoint itself, not LCP / INP / CLS.
+- `ci-integration` skill — wiring a Lighthouse or PageSpeed gate into
+  a pipeline. That gate is not `collection run`.

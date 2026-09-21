@@ -73,8 +73,8 @@
         {
           "target": "SKILL.md",
           "source": "skills/api-monitoring/SKILL.md",
-          "bytes": 7805,
-          "sha256": "c1f4b6f1194fbedfeb0a8d8d443ccc5b80e8cd4f641b95f5d3867af6bc7c3033"
+          "bytes": 7933,
+          "sha256": "12b40a591fe39a6844edce23a72c1cc11d9eed63fe929a0d0e92e12e1c3b8b12"
         }
       ]
     },
@@ -86,8 +86,8 @@
         {
           "target": "SKILL.md",
           "source": "skills/api-testing/SKILL.md",
-          "bytes": 4545,
-          "sha256": "7419daa5c0f8fea327c11f4ba790f4d3bb77bc80311f33283a7407b9c2311e36"
+          "bytes": 4818,
+          "sha256": "80028156f3fc62cd3b2f02ddf49004ed3f5c2fa1beff48dbf74c20e3a995f920"
         }
       ]
     },
@@ -99,8 +99,8 @@
         {
           "target": "SKILL.md",
           "source": "skills/bootstrap/SKILL.md",
-          "bytes": 6752,
-          "sha256": "b41a2bf1cb676ace4075dba270e00a092df77732f9f4accb7c4e61d80fed4220"
+          "bytes": 6845,
+          "sha256": "4d765864ee8c8b2b08242b717aeb763375e6fb300bac92d655dfae67f37cce12"
         },
         {
           "target": "reference/cli_installation.md",
@@ -118,8 +118,8 @@
         {
           "target": "SKILL.md",
           "source": "skills/ci-integration/SKILL.md",
-          "bytes": 6282,
-          "sha256": "5133310bc4a81b49192987cc6568fbfc46f7b12fe8fa50fc42a5ee26bb21d4c0"
+          "bytes": 6441,
+          "sha256": "dbe1ca43dc416d74335ed7600023a63cd2e13b53e48f52d6b06b19734e999de0"
         }
       ]
     },
@@ -150,8 +150,8 @@
         {
           "target": "SKILL.md",
           "source": "skills/performance-testing/SKILL.md",
-          "bytes": 4634,
-          "sha256": "eb9814890416c93117becc8e23efa27e764898278d82765cd356fd58671d97f7"
+          "bytes": 4784,
+          "sha256": "37de87cade0134886151e328b26598f2ce7dd33430fe009a8ccda30c39666bcc"
         }
       ]
     },
@@ -230,8 +230,8 @@
         {
           "target": "SKILL.md",
           "source": "skills/website-performance/SKILL.md",
-          "bytes": 7262,
-          "sha256": "0830030fc4c4592689d0a3d8b821d265be64a159386184bf6d8f9e7766336176"
+          "bytes": 7666,
+          "sha256": "df52359b9a4f04a6817aa6987191cb53b9c25001a412c2b46331042cd0ac8bc8"
         }
       ]
     }

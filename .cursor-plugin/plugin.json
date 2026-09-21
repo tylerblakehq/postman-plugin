@@ -2,7 +2,7 @@
   "name": "postman",
   "displayName": "Postman",
   "version": "2.0.0",
-  "description": "Work with Postman from your agent: bootstrap a repo's Postman setup, mock an API before it's implemented, run collection and governance checks in CI, monitor a live endpoint, deploy and debug Postman Flows, and publish generated API documentation.",
+  "description": "Work with Postman from your agent: bootstrap a repo's Postman setup, mock an API before it's implemented, run collection and governance checks in CI, monitor a live endpoint, deploy and debug Postman Flows, load-test APIs, improve page-load Core Web Vitals, and publish generated API documentation.",
   "author": {
     "name": "Postman",
     "url": "https://github.com/postmanlabs"
@@ -17,7 +17,9 @@
     "monitoring",
     "ci",
     "documentation",
-    "flows"
+    "ai-readiness",
+    "flows",
+    "performance"
   ],
   "skills": "skills"
 }

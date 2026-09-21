@@ -74,3 +74,8 @@ passed, not just that the run completed. State which runner actually
 executed it (`local`/`postman-cloud`/`postman-cloud-static-ip`) — that
 determines whether the numbers reflect the target's real-world reachability
 or only local-network conditions.
+
+## Reference
+
+- `website-performance` skill — LCP, INP, CLS, Lighthouse, PageSpeed,
+  images, and fonts. This skill is API load under concurrency.

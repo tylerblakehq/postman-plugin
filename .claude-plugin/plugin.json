@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin.json",
   "name": "postman",
   "displayName": "Postman",
-  "description": "Work with Postman from your agent: bootstrap a repo's Postman setup, mock an API before it's implemented, run collection and governance checks in CI, monitor a live endpoint, deploy and debug Postman Flows, and publish generated API documentation.",
+  "description": "Work with Postman from your agent: bootstrap a repo's Postman setup, mock an API before it's implemented, run collection and governance checks in CI, monitor a live endpoint, deploy and debug Postman Flows, load-test APIs, improve page-load Core Web Vitals, and publish generated API documentation.",
   "author": {
     "name": "Postman",
     "url": "https://github.com/postmanlabs"
@@ -10,5 +10,5 @@
   "homepage": "https://www.postmanlabs.com/skills/",
   "repository": "https://github.com/postmanlabs/postman-plugin",
   "license": "Apache-2.0",
-  "keywords": ["postman", "api", "mocking", "monitoring", "ci", "documentation", "ai-readiness", "flows"]
+  "keywords": ["postman", "api", "mocking", "monitoring", "ci", "documentation", "ai-readiness", "flows", "performance"]
 }

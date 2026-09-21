@@ -14,6 +14,9 @@ inspect existing ones, `monitor run` triggers an ad hoc run, and `monitor
 jobs`/`monitor runs` inspect what actually happened during a run. There is
 no remaining task here that has to go through the Postman app.
 
+A Monitor is not Lighthouse. Recurring API checks are this skill; page
+paint, INP, and layout shift are `website-performance`.
+
 `postman runner` is a separate, infrastructure-level concern: it starts a
 self-hosted execution agent so Monitor runs can reach APIs that live behind
 a private network Postman's cloud can't reach directly, and it lists the

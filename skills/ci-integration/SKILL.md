@@ -119,3 +119,6 @@ no secret value appears literally in the committed workflow file.
 - `bootstrap` skill — CLI resolution, workspace linking, `.postman/resources.yaml`.
 - `ai-readiness` skill — `collection ai-readiness`, `spec ai-readiness`, and
   their `--min-score` gate.
+- `website-performance` skill — a Lighthouse / PageSpeed / Core Web Vitals
+  gate. That is not a Postman CLI step and does not belong in `collection
+  run`.

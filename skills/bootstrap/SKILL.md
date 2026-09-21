@@ -7,10 +7,11 @@ description: Resolves the Postman CLI, authenticates, links the workspace, and r
 
 ## Overview
 
-One-time and idempotent: every other Postman skill in this plugin reads the
-values this one records and re-derives none of them. Finding an existing
-`postman/` tree or an OpenAPI file is a signal to inspect, not to assume this
-repo is already set up.
+One-time and idempotent: every other Postman CLI skill in this plugin reads
+the values this one records and re-derives none of them. `website-performance`
+does not — it has no CLI, workspace id, or spec path to resolve. Finding an
+existing `postman/` tree or an OpenAPI file is a signal to inspect, not to
+assume this repo is already set up.
 
 ## Rules
 
