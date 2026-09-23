@@ -1,6 +1,6 @@
 ---
 name: website-performance
-description: Makes pages load and respond faster by measuring Core Web Vitals first, then cutting image, JavaScript, CSS, font, cache, and server bottlenecks. Use when the user asks to "optimize website performance," "improve LCP / INP / CLS," "fix PageSpeed / Lighthouse," "speed up this page," "reduce layout shift," or "optimize images and fonts." Not for API load testing or `postman performance run` — that is the `performance-testing` skill.
+description: Makes pages load and respond faster by measuring Core Web Vitals first, then cutting image, JavaScript, CSS, font, cache, and server bottlenecks. Use when the user asks to "optimize website performance," "improve LCP / INP / CLS / TTFB," "fix PageSpeed / Lighthouse," "speed up this page," "reduce layout shift," or "optimize images and fonts." Not for API load testing or `postman performance run` — that is the `performance-testing` skill.
 ---
 
 # Website Performance
@@ -40,7 +40,7 @@ secrets. Use placeholders such as `YOUR_API_KEY`.
   main content appears — aim under 2.5s. INP (Interaction to Next Paint)
   is how quickly the page responds to clicks and typing — aim under 200ms.
   CLS (Cumulative Layout Shift) is unexpected movement — aim under 0.1.
-  Also record TTFB, transfer size, and request count. Tools: Chrome
+  Also record TTFB, page weight (transfer size), and request count. Tools: Chrome
   DevTools Lighthouse, Network, and Performance; PageSpeed Insights;
   WebPageTest; real-user data from the browser Performance API.
 - **Images are usually the largest bytes.** Ship WebP or AVIF at the
@@ -119,6 +119,9 @@ const [user, orders, settings] = await Promise.all([
   getSettings()
 ]);
 ```
+
+How an API holds up under concurrent virtual users is
+`performance-testing`, not this skill.
 
 - **APIs should return only what the page needs.** Sparse field sets,
   compressed responses, cursor pagination, cache-safe GETs, no N+1

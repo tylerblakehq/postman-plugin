@@ -225,13 +225,13 @@
     {
       "name": "website-performance",
       "plugin": "postman",
-      "description": "Makes pages load and respond faster by measuring Core Web Vitals first, then cutting image, JavaScript, CSS, font, cache, and server bottlenecks. Use when the user asks to \"optimize website performance,\" \"improve LCP / INP / CLS,\" \"fix PageSpeed / Lighthouse,\" \"speed up this page,\" \"reduce layout shift,\" or \"optimize images and fonts.\" Not for API load testing or `postman performance run` — that is the `performance-testing` skill.",
+      "description": "Makes pages load and respond faster by measuring Core Web Vitals first, then cutting image, JavaScript, CSS, font, cache, and server bottlenecks. Use when the user asks to \"optimize website performance,\" \"improve LCP / INP / CLS / TTFB,\" \"fix PageSpeed / Lighthouse,\" \"speed up this page,\" \"reduce layout shift,\" or \"optimize images and fonts.\" Not for API load testing or `postman performance run` — that is the `performance-testing` skill.",
       "files": [
         {
           "target": "SKILL.md",
           "source": "skills/website-performance/SKILL.md",
-          "bytes": 7666,
-          "sha256": "df52359b9a4f04a6817aa6987191cb53b9c25001a412c2b46331042cd0ac8bc8"
+          "bytes": 7781,
+          "sha256": "b94e619785775229f793bebbc20f961e498f11099bc6708453de0e880612506b"
         }
       ]
     }
