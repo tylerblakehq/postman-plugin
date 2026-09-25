@@ -11,10 +11,10 @@ Use this to learn *about Postman itself* — not to search the user's own collec
 
 ## Prerequisites
 
-This command uses `searchLearningCenter`, which is only exposed when the Postman MCP Server runs in **Full mode** (`POSTMAN_MCP_MODE=mcp`, the default). It is **not** available in `minimal` or `code` mode.
+This command uses `searchLearningCenter`, which is only exposed when the Postman MCP Server runs in **Full mode**. The plugin URL is `https://mcp.postman.com/mcp`. It is **not** available on `https://mcp.postman.com/minimal` or `https://mcp.postman.com/code`.
 
 - If MCP tools aren't available at all, tell the user: "Run `/postman:setup` to configure the Postman MCP Server."
-- If `searchLearningCenter` specifically is missing, call `getEnabledTools` to confirm the active tool set, then tell the user: "Searching the Learning Center requires Full mode. Unset `POSTMAN_MCP_MODE` (or set it to `mcp`) and restart Claude Code."
+- If `searchLearningCenter` specifically is missing, call `getEnabledTools` to confirm the active tool set, then tell the user: "Searching the Learning Center requires Full mode. Set the Postman MCP URL to https://mcp.postman.com/mcp and restart the client."
 
 ## Workflow
 
@@ -64,6 +64,6 @@ To create a mock server in Postman:
 ## Error Handling
 
 - **MCP not configured:** "Run `/postman:setup` to configure the Postman MCP Server."
-- **Tool unavailable (wrong mode):** Confirm with `getEnabledTools`, then: "Searching the Learning Center requires Full mode. Unset `POSTMAN_MCP_MODE` (or set it to `mcp`) and restart Claude Code."
+- **Tool unavailable (wrong mode):** Confirm with `getEnabledTools`, then: "Searching the Learning Center requires Full mode. Set the Postman MCP URL to https://mcp.postman.com/mcp and restart the client."
 - **401 Unauthorized:** "Your Postman API key was rejected. Generate a new one at https://go.postman.co/settings/me/api-keys and run `/postman:setup`."
 - **No results:** "Nothing matched in the Learning Center. Try rephrasing with the Postman feature name, or ask about a more specific step."

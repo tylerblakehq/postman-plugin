@@ -2,7 +2,7 @@
   "mcpServers": {
     "postman": {
       "type": "http",
-      "url": "https://mcp.postman.com/${POSTMAN_MCP_MODE:-mcp}",
+      "url": "https://mcp.postman.com/mcp",
       "headers": {
         "X-Source": "postman-skills-plugin",
         "X-Plugin-Version": "2.0.0",

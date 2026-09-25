@@ -175,8 +175,8 @@
         {
           "target": "references/learn.md",
           "source": "skills/postman-mcp-server/references/learn.md",
-          "bytes": 3804,
-          "sha256": "28ef641ec90799cbc1eb84135e187848375c0654053f4956821062af59226e83"
+          "bytes": 3874,
+          "sha256": "9c5f75f1979ba6b4bec4e58106330ee8980d939fac62ffb94670d0d4e7f2d434"
         },
         {
           "target": "references/mcp-limitations.md",
